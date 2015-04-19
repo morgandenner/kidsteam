@@ -1,0 +1,386 @@
+	/* CSS ELEMENTS AND CLASSES*/
+	html{
+		height: 100%;
+
+		}
+	body{
+		height: 100%;
+		overflow-x: hidden;
+		}
+    #circle{
+        margin-left: auto;
+        margin-right: auto;
+        border: solid 2px green;
+        border-radius: 100%;
+        height: 50px;
+        width: 50px;
+        }
+    #name{
+        font-size: 14px;
+		font-family: 'Lora', Arial, serif;
+        text-align: center;
+        }
+    #student{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+        }
+	#date{
+        font-size: 14px;
+		font-family: 'Lora', Arial, serif;
+        text-align: center;
+	}
+	.wrap{
+		min-height: 100%;
+		height: auto;
+  /* Negative indent footer by its height */
+        margin-bottom: -60px;
+  /* Pad bottom by footer height */
+        padding: 0 0 60px;
+        }
+    .page-row {
+  display: table-row;
+  height: 1px;
+        }
+ 
+.page-row-expanded { 
+        height: 100%; 
+        }
+	.wrap:after{
+		content: "";
+		display: block;
+		}
+	.site-footer, .wrap:after{
+		height: 40px;
+		}
+	.site-footer{
+        height:60px;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+		float: bottom;	
+		background: grey;
+		clear: both;
+		}
+    .site-footer div{
+        color: white;
+        text-decoration: none;
+        }
+    a{
+        text-decoration: none!important;
+        color: #311B57!important;
+        }
+    a:hover{
+        text-decoration: none!important;
+        color: #BCA9F5!important;
+        }
+    a:visited{
+        text-decoration: none!important;
+        }
+	.logo{
+        
+		font-size: 130px;
+		font-family: 'Lora', Arial, serif;
+		}
+	.main-nav li{
+		font-size: 25px;
+		font-family: 'Lora', Arial, serif;
+		}
+	.main-nav li .signin{
+		font-size: 30px;
+		font-family: 'Lora', Arial, serif;
+		}
+	.signature{
+		font-size: 25px;
+		font-family: 'Lora', Arial, serif;
+		}
+
+	/* CSS ID's */
+
+	#online-status-left{
+        height: 200px;
+        max-height: 200px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+		float: left;
+		border: solid 1px black;
+		}
+    #feed-left{
+        height: 200px;
+        max-height: 200px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+		border: solid 1px black;
+		}
+	#white-space{
+		height: 40%;
+		width: 100%;
+		border: solid 1px black;
+		}
+	#content-right{	
+        padding-right: 5px;
+
+
+		}
+	#announcement{
+		border: solid 1px black;
+		margin-bottom: 50px;
+		padding: 15px 15px 15px 15px;
+		
+		}
+	#online-status-left h1{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+		margin-bottom: 10px;
+		font-size: 35px;
+		font-family: 'Lora', Arial, serif;
+		} 
+    #feed-left h1{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+		padding-bottom: 30px;
+		font-size: 35px;
+		font-family: 'Lora', Arial, serif;
+		} 
+	#announcement h1{
+        text-align: center;
+		margin-bottom: 25px;
+		font-size: 35px;
+		font-family: 'Lora', Arial, serif;
+		} 
+	#announcement p{
+		font-size: 14px;
+		font-family: 'Lora', Arial, serif;
+		text-align: justify;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 15px;
+		}
+span{
+    font-size: 14px;
+    font-family: 'Lora', Arial, serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    }
+#bar{ 
+    width:100%; height:35px; padding:15px 0; background:url(../images/bar.png) repeat-x; }
+#container { width:960px; margin:0 auto; }
+
+/*-------LOGIN STARTS HERE -------*/
+
+/* Login Container (default to float:right) */
+#loginContainer {
+    position:relative;
+    font-size:12px;
+    }
+
+/* Login Button */
+#loginButton { 
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Lora', Arial, serif;
+    float: right;
+    padding-right: 50px;
+    }
+/* Login Form */
+#loginForm {
+    width:248px; 
+    border:1px solid #899caa;
+    border-radius:3px 0 3px 3px;
+    -moz-border-radius:3px 0 3px 3px;
+    margin-top:-1px;
+    background:#d2e0ea;
+    padding:6px;
+    }
+#loginForm fieldset {
+    margin:0 0 12px 0;
+    display:block;
+    border:0;
+    padding:0;
+    }
+fieldset #body {
+    background:#fff;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    padding:10px 13px;
+    margin:0;
+    }
+
+#loginForm #checkbox {
+    width:auto;
+    margin:1px 9px 0 0;
+    float:left;
+    padding:0;
+    border:0;
+    *margin:-3px 9px 0 0; /* IE7 Fix */
+    }
+
+#body label {
+    color:#3a454d;
+    margin:9px 0 0 0;
+    display:block;
+    float:left;
+    }
+
+#loginForm #body fieldset label {
+    display:block;
+    float:none;
+    margin:0 0 6px 0;
+    }
+
+/* Default Input */
+#loginForm input {
+    width:92%;
+    border:1px solid #899caa;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    color:#3a454d;
+    font-weight:bold;
+    padding:8px 8px;
+    box-shadow:inset 0px 1px 3px #bbb;
+    -webkit-box-shadow:inset 0px 1px 3px #bbb;
+    -moz-box-shadow:inset 0px 1px 3px #bbb;
+    font-size:12px;
+    }
+
+/* Sign In Button */
+#loginForm #login {
+    width:auto;
+    float:left;
+    background:#339cdf url(../images/loginbuttonbg.png) repeat-x;
+    color:#fff;
+    padding:7px 10px 8px 10px;
+    text-shadow:0px -1px #278db8;
+    border:1px solid #339cdf;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    margin:0 12px 0 0;
+    cursor:pointer;
+    *padding:7px 2px 8px 2px; /* IE7 Fix */
+    }
+
+/* Forgot your password */
+#loginForm span {
+    text-align:center;
+    display:block;
+    padding:7px 0 4px 0;
+    }
+
+#loginForm span a {
+    color:#3a454d;
+    text-shadow:1px 1px #fff;
+    font-size:12px;
+    }
+
+input:focus {
+    outline:none;
+    }
+
+/*=========================== SIGN IN PAGE ============================================== */
+input{
+    font-family: 'Lora', Arial, serif;
+    height: 50px;
+    width: 230px;
+    text-align: center;
+    }
+#sign-in-form{
+    margin-left: auto;
+    margin-right: auto;
+
+    
+    }
+#sign-in{
+    height: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+#profile-register{
+    height: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+#profile-register h1{
+    font-family: 'Lora', Arial, serif;
+    }
+#sign-in:nth-child(2){
+    padding-top: 20px;
+    }
+#sign-in p{
+    margin-top: 10px;
+    }
+#callback{
+    height: 200px;
+    }
+#response{
+    color: red;
+    font-family: 'Lora', Arial, serif;
+    
+    font-size: 12px;
+    height: 20px;
+    
+    }
+/*--------------------CHAT SECTION -----------*/
+#chat{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	}
+#textarea{
+	position: relative;
+	height: 120px;
+	width: 80%;
+	}
+#table{
+	
+	}
+#chatwindow{
+	border: 1px solid black;
+	width: 100%;
+	height: 400px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	}
+#chatline{
+	height: 110px;
+	margin-top: 5px;
+	}
+#chatbubble{
+	width: auto;
+	max-width: 55%;
+	position: relative;
+	text-align: left;
+	border: solid 4px black;
+	padding: 7px 5px 0 5px;
+	border-radius: 35px;
+	font-family: 'Lora', serif;
+	font-size: 12px;
+	
+	}
+#icon{
+	margin-top: 5px;
+	}
+#chatcircle{
+        border: solid 2px green;
+        border-radius: 100%;
+        height: 40px;
+        width: 40px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+        }
+    #chatname{
+        font-size: 10px;
+		font-family: 'Lora', Arial, serif;
+        text-align: left;
+		text-align: center;
+        }
+	#date{
+        font-size: 10px;
+		font-family: 'Lora', Arial, serif;
+        text-align: center;
+	}
